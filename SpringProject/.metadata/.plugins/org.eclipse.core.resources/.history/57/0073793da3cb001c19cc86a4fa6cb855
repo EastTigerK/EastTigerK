@@ -1,0 +1,5 @@
+package com.DogHub.dao;
+
+public class UserDAOImp {
+
+}

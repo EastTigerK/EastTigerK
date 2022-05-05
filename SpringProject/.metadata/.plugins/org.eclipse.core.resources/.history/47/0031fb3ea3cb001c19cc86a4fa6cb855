@@ -1,0 +1,5 @@
+package com.DogHub.service;
+
+public class UserServiceImp {
+
+}

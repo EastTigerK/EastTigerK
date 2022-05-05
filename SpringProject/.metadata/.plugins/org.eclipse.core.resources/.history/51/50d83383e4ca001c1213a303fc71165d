@@ -1,0 +1,14 @@
+package com.DogHub;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.web.bind.annotation.GetMapping;
+
+@SpringBootApplication
+@RestController
+public class DogHubApplication {
+	@GetMapping("/")
+	public String test() {
+		return "test";
+	}
+}

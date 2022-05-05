@@ -1,0 +1,12 @@
+package com.DogHub;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class DogHubApplication {
+	@GetMapping("/")
+	public String test() {
+		return test;
+	}
+}

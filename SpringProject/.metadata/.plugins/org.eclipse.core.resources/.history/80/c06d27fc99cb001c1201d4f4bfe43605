@@ -1,0 +1,17 @@
+package com.DogHub.dto;
+
+@Getter
+@Setter
+@ToString
+public class Join {
+	
+	private String username;
+	
+	private String password;
+		
+	private String email;
+	
+	private String nickname;
+	
+	private String phone;
+}

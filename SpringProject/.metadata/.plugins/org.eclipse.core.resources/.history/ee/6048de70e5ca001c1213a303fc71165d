@@ -1,0 +1,14 @@
+package com.DogHub;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class MainController {
+	
+	@GetMapping("/")
+	public String test() {
+		return "사랑해요 연애가중계";
+	}
+
+}
