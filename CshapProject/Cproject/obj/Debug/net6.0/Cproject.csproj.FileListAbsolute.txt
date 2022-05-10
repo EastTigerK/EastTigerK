@@ -1,0 +1,15 @@
+C:\Users\feel6\source\repos\Cproject\bin\Debug\net6.0\Cproject.exe
+C:\Users\feel6\source\repos\Cproject\bin\Debug\net6.0\Cproject.deps.json
+C:\Users\feel6\source\repos\Cproject\bin\Debug\net6.0\Cproject.runtimeconfig.json
+C:\Users\feel6\source\repos\Cproject\bin\Debug\net6.0\Cproject.dll
+C:\Users\feel6\source\repos\Cproject\bin\Debug\net6.0\Cproject.pdb
+C:\Users\feel6\source\repos\Cproject\obj\Debug\net6.0\Cproject.csproj.AssemblyReference.cache
+C:\Users\feel6\source\repos\Cproject\obj\Debug\net6.0\Cproject.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\feel6\source\repos\Cproject\obj\Debug\net6.0\Cproject.AssemblyInfoInputs.cache
+C:\Users\feel6\source\repos\Cproject\obj\Debug\net6.0\Cproject.AssemblyInfo.cs
+C:\Users\feel6\source\repos\Cproject\obj\Debug\net6.0\Cproject.csproj.CoreCompileInputs.cache
+C:\Users\feel6\source\repos\Cproject\obj\Debug\net6.0\Cproject.dll
+C:\Users\feel6\source\repos\Cproject\obj\Debug\net6.0\refint\Cproject.dll
+C:\Users\feel6\source\repos\Cproject\obj\Debug\net6.0\Cproject.pdb
+C:\Users\feel6\source\repos\Cproject\obj\Debug\net6.0\Cproject.genruntimeconfig.cache
+C:\Users\feel6\source\repos\Cproject\obj\Debug\net6.0\ref\Cproject.dll

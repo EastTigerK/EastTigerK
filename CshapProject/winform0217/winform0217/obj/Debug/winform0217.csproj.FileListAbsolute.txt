@@ -1,0 +1,12 @@
+E:\2022AIC#\winform0217\winform0217\bin\Debug\winform0217.exe.config
+E:\2022AIC#\winform0217\winform0217\bin\Debug\winform0217.exe
+E:\2022AIC#\winform0217\winform0217\bin\Debug\winform0217.pdb
+E:\2022AIC#\winform0217\winform0217\obj\Debug\winform0217.csproj.SuggestedBindingRedirects.cache
+E:\2022AIC#\winform0217\winform0217\obj\Debug\winform0217.Form1.resources
+E:\2022AIC#\winform0217\winform0217\obj\Debug\winform0217.Properties.Resources.resources
+E:\2022AIC#\winform0217\winform0217\obj\Debug\winform0217.csproj.GenerateResource.cache
+E:\2022AIC#\winform0217\winform0217\obj\Debug\winform0217.csproj.CoreCompileInputs.cache
+E:\2022AIC#\winform0217\winform0217\obj\Debug\winform0217.exe
+E:\2022AIC#\winform0217\winform0217\obj\Debug\winform0217.pdb
+E:\2022AIC#\winform0217\winform0217\obj\Debug\winform0217.csproj.AssemblyReference.cache
+E:\2022AIC#\winform0217\winform0217\obj\Debug\winform0217.FormTest1.resources
