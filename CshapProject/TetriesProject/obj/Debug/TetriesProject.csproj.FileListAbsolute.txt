@@ -1,0 +1,11 @@
+C:\Users\feel6\source\repos\TetriesProject\bin\Debug\TetriesProject.exe.config
+C:\Users\feel6\source\repos\TetriesProject\bin\Debug\TetriesProject.exe
+C:\Users\feel6\source\repos\TetriesProject\bin\Debug\TetriesProject.pdb
+C:\Users\feel6\source\repos\TetriesProject\obj\Debug\TetriesProject.csproj.AssemblyReference.cache
+C:\Users\feel6\source\repos\TetriesProject\obj\Debug\TetriesProject.csproj.SuggestedBindingRedirects.cache
+C:\Users\feel6\source\repos\TetriesProject\obj\Debug\TetriesProject.Properties.Resources.resources
+C:\Users\feel6\source\repos\TetriesProject\obj\Debug\TetriesProject.csproj.GenerateResource.cache
+C:\Users\feel6\source\repos\TetriesProject\obj\Debug\TetriesProject.csproj.CoreCompileInputs.cache
+C:\Users\feel6\source\repos\TetriesProject\obj\Debug\TetriesProject.exe
+C:\Users\feel6\source\repos\TetriesProject\obj\Debug\TetriesProject.pdb
+C:\Users\feel6\source\repos\TetriesProject\obj\Debug\TetriesProject.Form1.resources
