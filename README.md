@@ -1,4 +1,6 @@
 ### Hi there 👋
+Hello, I'm Dongho Kang, and I've been studying development for 6 months.
+I am currently living in Daegu, South Korea.
 
 <!--
 **EastTigerK/EastTigerK** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
