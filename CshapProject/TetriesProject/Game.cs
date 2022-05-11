@@ -25,11 +25,11 @@ namespace TetriesProject
                 return now.BlockNum;
             }
         }
-        internal int Trun
+        internal int Turn
         {
             get
             {
-                return now.Trun;
+                return now.Turn;
             }
         }
         internal static Game Singleton//싱글톤사용
@@ -59,7 +59,7 @@ namespace TetriesProject
             {
                 for (int yy = 0; yy < 4; yy++)
                 {
-                    if (BlockValue.bvals[now.BlockNum, Trun, xx, yy] != 0)
+                    if (BlockValue.bvals[now.BlockNum, Turn, xx, yy] != 0)
                     {
                         if (now.x + xx + 1 >= GameRule.BX)
                         {
@@ -68,7 +68,7 @@ namespace TetriesProject
                     }
                 }
             }
-            if (gboard.MoveEnalbe(now.BlockNum, Trun, now.x + 1, now.y))
+            if (gboard.MoveEnalbe(now.BlockNum, Turn, now.x + 1, now.y))
             {
                 now.MoveRight();
                 return true;
@@ -83,7 +83,7 @@ namespace TetriesProject
             {
                 for (int yy = 0; yy < 4; yy++)
                 {
-                    if (BlockValue.bvals[now.BlockNum, Trun, xx, yy] != 0)
+                    if (BlockValue.bvals[now.BlockNum, Turn, xx, yy] != 0)
                     {
                         if (now.x + xx <= 0)
                         {
@@ -93,7 +93,7 @@ namespace TetriesProject
                 }
             }
 
-            if(gboard.MoveEnalbe(now.BlockNum, Trun, now.x - 1, now.y))
+            if(gboard.MoveEnalbe(now.BlockNum, Turn, now.x - 1, now.y))
             {
                 now.MoveLeft();
                 return true;
@@ -107,31 +107,31 @@ namespace TetriesProject
             {
                 for (int yy = 0; yy < 4; yy++)
                 {
-                    if (BlockValue.bvals[now.BlockNum, Trun, xx, yy] != 0)
+                    if (BlockValue.bvals[now.BlockNum, Turn, xx, yy] != 0)
                     {
                         if (now.y + yy + 1 >= GameRule.BY)
                         {
-                            gboard.Store(now.BlockNum, Trun, now.x, now.y);
+                            gboard.Store(now.BlockNum, Turn, now.x, now.y);
                             return false;
                         }
                     }
                 }
             }
-            if (gboard.MoveEnalbe(now.BlockNum, Trun, now.x, now.y + 1))
+            if (gboard.MoveEnalbe(now.BlockNum, Turn, now.x, now.y + 1))
             {
                 now.MoveDown();
                 return true;
             }
-            gboard.Store(now.BlockNum, Trun, now.x, now.y);
+            gboard.Store(now.BlockNum, Turn, now.x, now.y);
             return false;
         }
-        internal bool MoveTrun()
+        internal bool MoveTurn()
         {
             for (int xx = 0; xx < 4; xx++)
             {
                 for (int yy = 0; yy < 4; yy++)
                 {
-                    if (BlockValue.bvals[now.BlockNum, (Trun + 1) % 4, xx, yy] != 0)
+                    if (BlockValue.bvals[now.BlockNum, (Turn + 1) % 4, xx, yy] != 0)
                     {
                         if (((now.x + xx) < 0) || ((now.x + xx)) >= GameRule.BX || ((now.y + yy) >= GameRule.BY))
                         {
@@ -140,17 +140,22 @@ namespace TetriesProject
                     }
                 }
             }
-            if (gboard.MoveEnalbe(now.BlockNum, (Trun + 1) % 4, now.x, now.y))
+            if (gboard.MoveEnalbe(now.BlockNum, (Turn + 1) % 4, now.x, now.y))
             {
-                now.MoveTrun();
+                now.MoveTurn();
                 return true;
             }
             return false;
 
         }
-        internal void Next()
+        internal bool Next()
         {
             now.Reset();
+            return gboard.MoveEnalbe(now.BlockNum, Turn, now.x, now.y);
+        }
+        internal void Restart()
+        {
+            gboard.ClearBoard();
         }
     }
 }

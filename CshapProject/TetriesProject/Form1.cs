@@ -62,7 +62,7 @@ namespace TetriesProject
             Pen dpen = new Pen(Color.Red, 4);
             Point now = game.NowPosition;
             int bn = game.BlockNum;
-            int tn = game.Trun;
+            int tn = game.Turn;
             for(int xx=0; xx < 4; xx++)
             {
                 for(int yy=0; yy < 4; yy++)
@@ -118,19 +118,27 @@ namespace TetriesProject
                 case Keys.Right: MoveRight(); return;
                 case Keys.Left: MoveLeft(); return;
                 case Keys.Space: MoveDown(); return;
-                case Keys.Up:MoveTrun(); return;
+                case Keys.Up:MoveTurn(); return;
             }
         }
 
-        private void MoveTrun()
+        private void MoveTurn()
         {
-            if (game.MoveTrun())
+            if (game.MoveTurn())
             {
                 Region rg = MakeRegion();
                 Invalidate(rg);
             }
         }
-
+        private void MoveSDown()
+        {
+            while (game.MoveDown())
+            {
+                Region rg = MakeRegion(0, -1);
+                Invalidate(rg);
+            }
+                EndingCheck();
+        }
         private void MoveDown()
         {
             if (game.MoveDown())
@@ -140,12 +148,32 @@ namespace TetriesProject
             }
             else
             {
-                game.Next();
-                Invalidate();
+                EndingCheck();
             }
         }
 
-
+        private void EndingCheck()
+        {
+            if (game.Next())
+            {
+                Invalidate();
+            }
+            else
+            {
+                timer_down.Enabled = false;
+                DialogResult re = MessageBox.Show("다시 시작", "의사", MessageBoxButtons.YesNo);
+                if (re == DialogResult.Yes)
+                {
+                    game.Restart();
+                    timer_down.Enabled = true;
+                    Invalidate();
+                }
+                else
+                {
+                    Close();
+                }
+            }
+        }
 
         private void MoveLeft()
         {
@@ -168,7 +196,7 @@ namespace TetriesProject
         {
             Point now = game.NowPosition;
             int bn = game.BlockNum;
-            int tn = game.Trun;
+            int tn = game.Turn;
 
             Region region = new Region();
             for(int xx=0; xx < 4; xx++)
@@ -193,7 +221,7 @@ namespace TetriesProject
         {
             Point now = game.NowPosition;
             int bn = game.BlockNum;
-            int tn = game.Trun;
+            int tn = game.Turn;
             int oldtn = (tn + 3) % 4;
 
             Region region = new Region();

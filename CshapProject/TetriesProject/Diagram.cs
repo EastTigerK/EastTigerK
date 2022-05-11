@@ -19,7 +19,7 @@ namespace TetriesProject
             private set;
         }
         
-        internal int Trun
+        internal int Turn
         {
             get;
             private set;
@@ -39,7 +39,7 @@ namespace TetriesProject
             Random random = new Random();
             x = GameRule.SX;
             y = GameRule.SY;
-            Trun = random.Next() % 4;
+            Turn = random.Next() % 4;
             BlockNum = random.Next()%7;
         }
         internal void MoveLeft()
@@ -54,9 +54,9 @@ namespace TetriesProject
         {
             y++;
         }
-        internal void MoveTrun()
+        internal void MoveTurn()
         {
-            Trun = (Trun + 1) % 4;//현재턴+1 4까지 0,1,2,3반복
+            Turn = (Turn + 1) % 4;//현재턴+1 4까지 0,1,2,3반복
         }
     }
 }

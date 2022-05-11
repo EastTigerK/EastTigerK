@@ -58,6 +58,55 @@ namespace TetriesProject
                     }
                 }
             }
+            CheckLines(y + 3);
+        }
+
+        private void CheckLines(int y)
+        {
+            int yy = 0;
+            for (yy = 0; yy < 4; yy++)
+            {
+                if (y - yy < GameRule.BY)
+                {
+                    if(CheckLine(y - yy))
+                    {
+                        ClearLine(y - yy);
+                        y++;
+                    }
+                }
+            }
+        }
+
+        private bool CheckLine(int y)
+        {
+            for(int xx = 0; xx < GameRule.BX; xx++)
+            {
+                    if (board[xx, y] == 0)
+                    {
+                        return false;
+                    }
+            }
+            return true;
+        }
+
+        private void ClearLine(int y)
+        {
+            for (; y > 0; y--)
+            {
+                for (int xx=0; xx < GameRule.BX; xx++){
+                board[xx, y] = board[xx, y - 1];
+            }
+        }
+        }
+        internal void ClearBoard()
+        {
+            for(int xx=0;xx<GameRule.BX; xx++)
+            {
+                for(int yy=0;yy<GameRule.BY; yy++)
+                {
+                    board[xx, yy] = 0;
+                }
+            }
         }
     }
 }
