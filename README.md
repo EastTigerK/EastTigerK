@@ -39,5 +39,4 @@
 ## Instgram : https://www.instagram.com/East_Tiger_K/
 ## E-mail : 📧 feel6503@naver.com
 <hr/>
-<img src="https://user-images.githubusercontent.com/94586608/167970781-3b56cc1e-d16b-44cc-9f20-bbed9bae3ca3.jpg" width="200" height="250"/>
-<img src="https://user-images.githubusercontent.com/94586608/167970939-598fa961-640e-4bf4-9ddd-290293e0fb42.jpg" width="200" height="250"/>
+<img src="https://user-images.githubusercontent.com/94586608/167970781-3b56cc1e-d16b-44cc-9f20-bbed9bae3ca3.jpg" width="200" height="250"/><img src="https://user-images.githubusercontent.com/94586608/167970939-598fa961-640e-4bf4-9ddd-290293e0fb42.jpg" width="200" height="250"/>
