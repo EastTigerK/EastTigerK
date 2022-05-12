@@ -1,15 +1,18 @@
+<div align="center">
+  
 # Welcome to the most passionate GitHub
+  
+<hr/>
+  
+Hello, I'm Dong-ho kang who is hard studying a development.
 
->Hello, I'm Dong-ho kang who is hard studying a development.
+I am a man and I live in Korea.
 
->I am a man and I live in Korea.
+Don't get me wrong. It's **not North Korea**, it's South Korea^^
 
->Don't get me wrong. It's **not North Korea**, it's South Korea^^
+And i have **two pretty cute poodles** live together.Ha ha.
 
->And i have **two pretty cute poodles** live together.Ha ha.
-
->Now, I am very interested in AI, big data, and metaverse, so I am thinking about a business model and studying it.
-
+Now, I am very interested in AI, big data, and metaverse, so I am thinking about a business model and studying it.
 <hr/>
 
 # Available Development Tools
@@ -41,3 +44,4 @@
 ## E-mail : 📧 feel6503@naver.com
 
 <img src="https://user-images.githubusercontent.com/94586608/167970781-3b56cc1e-d16b-44cc-9f20-bbed9bae3ca3.jpg" width="250" height="250"/> <img src="https://user-images.githubusercontent.com/94586608/167970939-598fa961-640e-4bf4-9ddd-290293e0fb42.jpg" width="250" height="250"/>
+  </div>
