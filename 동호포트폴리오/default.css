@@ -4,6 +4,10 @@
     --borderColor:#c1c1c1;
     --mainText:black;
     --secondaryText:#4b5156;
+
+    --themeDotBorder:#24292e;
+    --previewBg:rgb(251, 249, 243, 0.8);
+    --priviewShadow:#f0ead6;
 }
 
 
@@ -71,9 +75,9 @@ h6 { font-size: 16px;}
     -webkit-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
     -moz-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
     box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 3em 20em;
     grid-template-areas: 
         'nav-wrapper nav-wrapper'
         'left-column right-column'
@@ -127,12 +131,209 @@ h6 { font-size: 16px;}
 }
 .left-column{
     grid-area: left-column;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    
 }
+
+#profile_pic{
+    display: block;
+    margin: 0 auto;
+
+
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    border: 2px soild var(--borderColor);
+}
+
+#theme-option-wrapper{
+    display: flex;
+    justify-content: center;
+}
+
+.theme-dot{
+    height: 30px;
+    width: 30px;
+    background-color: black;
+    border-radius: 50%;
+    margin: 5px;
+    border:2px solid var(--themeDotBorder);
+    
+    -webkit-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+    box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+
+    cursor: pointer;
+}
+
+.theme-dot:hover{
+    border-width: 5px;
+}
+
+#light-mode{
+    background-color: #fff;
+}
+#blue-mode{
+    background-color: #192734;
+}
+#green-mode{
+    background-color: #78866B;
+}
+#purple-mode{
+    background-color: #7E4C74;
+}
+#settings-note{
+    font-size: 12px;
+    font-style: italic;
+    text-align: center;
+}
+
 .right-column{
     grid-area: right-column;
+    display: grid;
+    align-content: center;
+
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
+
+#priview-shadow{
+    background-color: var(--priviewShadow);
+    width: 300px;
+    height: 180px;
+    padding-left: 30px;
+    padding-top: 30px;
+
+}
+
+#preview{
+    width: 300px;
+    border: 1.5px solid #17a2b8;
+    background-color: var(--previewBg);
+    padding: 15px;
+    position:relative;
+}
+#corner-tl{
+    top: -5px;
+    left: -5px;
+}
+#corner-tr{
+    top: -5px;
+    right: -5px;
+}
+#corner-br{
+    bottom: -5px;
+    right: -5px;
+}
+#corner-bl{
+    bottom: -5px;
+    left: -5px;
+}
+.corner{
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    border: 1.5px solid #17a2b8;
+    background-color: #fff;
+    position:absolute;
+
+}
+
+.about-wrapper{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px 1fr));
+}
+
+#skills{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.zt-skill-bar {
+    color: #fff;
+    font-size: 11px;
+    line-height: 25px;
+    height: 25px;
+    margin-bottom: 5px;
+
+    background-color: rgba(0,0,0,0.1);
+
+    -webkit-border-radius: 2px;
+       -moz-border-radius: 2px;
+        -ms-border-radius: 2px;
+            border-radius: 2px;
+
+}
+
+.zt-skill-bar * {
+    webkit-transition: all 0.5s ease;
+      -moz-transition: all 0.5s ease;
+       -ms-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+           transition: all 0.5s ease;
+}
+
+.zt-skill-bar div {
+    background-color: #ffc600;
+    position: relative;
+    padding-left: 25px;
+    width: 0;
+
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    border-radius: 2px;
+}
+
+.zt-skill-bar span {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    padding: 0 5px 0 10px;
+    background-color: #1a1a1a;
+
+    -webkit-border-radius: 0 2px 2px 0;
+       -moz-border-radius: 0 2px 2px 0;
+        -ms-border-radius: 0 2px 2px 0;
+            border-radius: 0 2px 2px 0;
+}
+
+.zt-skill-bar span:before {
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    top: 50%;
+    left: -3px;
+    margin-top: -3px;
+    background-color: #1a1a1a;
+
+    -webkit-transform: rotate(45deg);
+       -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+}
+
 @media screen and (max-width:1200px){
     .main-container{
         width:95%;
+    }
+}
+
+@media screen and (max-width:800px){
+    .intro-wrapper{
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            'nav-wrapper'
+            'left-column'
+            'right-column'
+        ;
+    }
+    .right-column{
+        justify-content: center;
     }
 }
