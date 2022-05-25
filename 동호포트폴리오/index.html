@@ -9,6 +9,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+    <script src="js/jquery.min.js" type="text/javascript"></script>
+    <script src="js/jqbar.js" type="text/javascript"></script>
     <title>Document</title>
 </head>
 <body>
@@ -67,36 +69,184 @@
                 <div class="about-me">
                     <h4>More about me</h4>
                     
-                    <p>내소개하기</p>
-
-                    <p>내소개2번쨰줄</p>
-                    <p>간단소개+이력서링크걸기
-                        이력서: <a target="_blank" href="Resume/DonghoKang.pdf">이력서 다운로드</a></p>
-
+                    <h5>
+                    안녕하세요😀
+                    <br>
+                    풀스텍 개발자가 되기위해 오늘도 공부하는 신입개발자 강동호 입니다.
+                    <br>
+                    여러 언어들을 공부하고있지만 특히 관심있는 분야는 인공지능,빅데이터 분야입니다.
+                    <br>
+                    많이 부족하지만 부족함을 알고 채워가려 배우고 배우고 배워가는 중입니다.
+                    <br>
+                    <br>
+                    <a target="_blank" href="Resume/DonghoKang.pdf">Resume Download Click</a>
+                    </h5> 
+                        <ul>
+                            <img src="https://img.shields.io/badge/c-A8B9CC?style=for-the-badge&logo=c&logoColor=white">
+                            <img src="https://img.shields.io/badge/c%23-%23239120.svg?style=for-the-badge&logo=c-sharp&logoColor=white"/>
+                            <img src="https://img.shields.io/badge/java-007396?style=for-the-badge&logo=java&logoColor=white"> 
+                            <img src="https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black">
+                            <img src="https://img.shields.io/badge/jquery-0769AD?style=for-the-badge&logo=jquery&logoColor=white">
+                            <img src="https://img.shields.io/badge/oracle-F80000?style=for-the-badge&logo=oracle&logoColor=white"> 
+                            <img src="https://img.shields.io/badge/mysql-4479A1?style=for-the-badge&logo=mysql&logoColor=white"> 
+                            <img src="https://img.shields.io/badge/apache tomcat-F8DC75?style=for-the-badge&logo=apachetomcat&logoColor=white">
+                            <img src="https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=white"> 
+                            <img src="https://img.shields.io/badge/css-1572B6?style=for-the-badge&logo=css3&logoColor=white">
+                            <img src="https://img.shields.io/badge/bootstrap-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white">
+                            <img src="https://img.shields.io/badge/springboot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white">
+                            <img src="https://img.shields.io/badge/spring-6DB33F?style=for-the-badge&logo=spring&logoColor=white">
+                            <img src="https://img.shields.io/badge/python-3776AB?style=for-the-badge&logo=python&logoColor=white">
+                            <img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white">
+                            <img src="https://img.shields.io/badge/git-F05032?style=for-the-badge&logo=git&logoColor=white">
+                            <img src="https://img.shields.io/badge/react-61DAFB?style=for-the-badge&logo=react&logoColor=black">
+                            </ul>
                 <hr>
 
-                <h4>TOP EXPERTISE</h4>
-                <div class="zt-span6 last">
-                    <p>&nbsp;</p>
-                    <p>&nbsp;</p>
-                    <h3><strong>진행율 바</strong></h3>
-                    <div class="zt-skill-bar"><div data-width="88" style="">쇼핑몰<span>88%</span></div></div>
-                    <div class="zt-skill-bar"><div data-width="92" style="">웹사이트/모바일<span>92%</span></div></div>
-                    <div class="zt-skill-bar"><div data-width="82" style="">패키지<span>82%</span></div></div>
-                    <div class="zt-skill-bar"><div data-width="85" style="">C.I/B.I/네이밍<span>85%</span></div></div>
-                    <div class="zt-skill-bar"><div data-width="60" style="">HTML5/CSS3<span>60%</span></div></div></div>
+                <h4>SKILL LEVEL</h4>
+                <div id="skills">
+                <ul>
+                    <div id="bar-1"></div>
+                    <div id="bar-2"></div>
+                    <div id="bar-3"></div>
+                    <div id="bar-4"></div>
+                    <div id="bar-5"></div>
+                    <div id="bar-6"></div>
+                </ul>
+                <ul>
+                    <div id="bar-7"></div>
+                    <div id="bar-8"></div>
+                    <div id="bar-9"></div>
+                    <div id="bar-10"></div>
+                    <div id="bar-11"></div>
+                    <div id="bar-12"></div>
+                </ul>
+                <ul>
+                    <div id="bar-13"></div>
+                    <div id="bar-14"></div>
+                    <div id="bar-15"></div>
+                    <div id="bar-16"></div>
+                </ul>
                 </div>
-             </div>
+                <script type="text/javascript">
+	            $(document).ready(function () 
+                {
+	        	$('#bar-1').jqbar({ label: 'C', value: 50, barColor: '#A8B9CC' });
+	        	$('#bar-2').jqbar({ label: 'C#', value: 65, barColor: '#3d6f44' });
+		        $('#bar-3').jqbar({ label: 'Java', value: 60, barColor: '#007396' });
+	        	$('#bar-4').jqbar({ label: 'JavaScript', value: 40, barColor: '#F7DF1E' });
+	          	$('#bar-5').jqbar({ label: 'ORACLE', value: 65, barColor: '#F80000' });
+		        $('#bar-6').jqbar({ label: 'MYSQL', value: 30, barColor: '#4479A1' });;
+                $('#bar-7').jqbar({ label: 'ApacheTomcat', value: 50, barColor: '#F8DC75' });;
+                $('#bar-8').jqbar({ label: 'HTML5', value: 45, barColor: '#E34F26' });;
+                $('#bar-9').jqbar({ label: 'CSS', value: 70, barColor: '#1572B6' });;
+                $('#bar-10').jqbar({ label: 'BootStrap', value: 30, barColor: '#7952B3' });;
+                $('#bar-11').jqbar({ label: 'SpringBoot', value: 30, barColor: '#6DB33F' });;
+                $('#bar-12').jqbar({ label: 'Spring', value: 30, barColor: '#6DB33F' });;
+                $('#bar-13').jqbar({ label: 'PYTHON', value: 30, barColor: '#3776AB' });;
+                $('#bar-14').jqbar({ label: 'GitHub', value: 60, barColor: '#181717' });;
+                $('#bar-15').jqbar({ label: 'Git', value: 55, barColor: '#F05032' });;
+                $('#bar-16').jqbar({ label: 'REACT', value: 30, barColor: '#61DAFB' });;
+	            });
+                </script>
+                </div>
+            </div>
+            </div>
         </div>
     </section>
      <section class="s1">
          <div class="main-container">
-           Project
-          </div>
+             <h3 style="text-align:center;">Some of my past Project</h3>
+             <div class="post-wrapper">
+
+                <div>
+                    <div class="post">
+                        <img class="thumbnail" src="images/dash.jpg">
+                        <div class="post-preview">
+                            <h6 class="post-title">Post Title</h6>
+                            <p class="post-intro">This is a sentenece Some more text</p>
+                            <a href="#">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="post">
+                        <img class="thumbnail" src="images/dash.jpg">
+                        <div class="post-preview">
+                            <h6 class="post-title">Post Title</h6>
+                            <p class="post-intro">This is a sentenece Some more text</p>
+                            <a href="#">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="post">
+                        <img class="thumbnail" src="images/dash.jpg">
+                        <div class="post-preview">
+                            <h6 class="post-title">Post Title</h6>
+                            <p class="post-intro">This is a sentenece Some more text</p>
+                            <a href="#">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="post">
+                        <img class="thumbnail" src="images/dash.jpg">
+                        <div class="post-preview">
+                            <h6 class="post-title">Post Title</h6>
+                            <p class="post-intro">This is a sentenece Some more text</p>
+                            <a href="#">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="post">
+                        <img class="thumbnail" src="images/dash.jpg">
+                        <div class="post-preview">
+                            <h6 class="post-title">Post Title</h6>
+                            <p class="post-intro">This is a sentenece Some more text</p>
+                            <a href="#">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="post">
+                        <img class="thumbnail" src="images/dash.jpg">
+                        <div class="post-preview">
+                            <h6 class="post-title">Post Title</h6>
+                            <p class="post-intro">This is a sentenece Some more text</p>
+                            <a href="#">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
      </section>
      <section class="s2">
         <div class="main-container">
-          Contact
+            <h3 style="text-align:center;">Get In Touch</h3>
+
+            <form id="contact-form">
+                <label>Name</label>
+                <input class="input-field" type="text" name="name">
+
+                <label>Subject</label>
+                <input class="input-field" type="text" name="Subject">
+
+                <label>Email</label>
+                <input class="input-field" type="text" name="email">
+
+                <label>Message</label>
+                <textarea class="input-field" type="text" name="message"></textarea>
+
+                <input id="submit-btn" type="submit" value="Send">
+
+            </form>
          </div>
     </section>
 </body>
